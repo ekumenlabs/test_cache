@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+repositories {
+  maven {
+    name 'cache'
+    url "/home/vagrant/m2copy"
+  }
+  jcenter()
+}
+
+dependencies {
+  compile 'com.google.code.gson:gson:2.4'
+  compile 'commons-collections:commons-collections:3.2.1'
+}
+
+jar {
+  manifest {
+    attributes 'Created-By': 'Ekumen'
+  }
+}
+
+
